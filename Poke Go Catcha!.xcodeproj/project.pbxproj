@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F11A72F6FFA2699D9ED098ED /* Pods_Poke_Go_Catcha_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C5B14ECBE0F20586583BAC /* Pods_Poke_Go_Catcha_.framework */; };
+		FD207EEB2551BF63001CD580 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207EEA2551BF63001CD580 /* csv.swift */; };
+		FD207EEE2551C7A8001CD580 /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD207EED2551C7A8001CD580 /* pokemon.ttf */; };
+		FD302B76255BFAB20044312B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD302B75255BFAB20044312B /* Launch Screen.storyboard */; };
+		FD41560E25595CE900AF53DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD41560D25595CE900AF53DE /* GoogleService-Info.plist */; };
+		FD4156312559616B00AF53DE /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4156262559616B00AF53DE /* GFBase32Utils.m */; };
+		FD4156322559616B00AF53DE /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4156282559616B00AF53DE /* GeoFire.m */; };
+		FD4156332559616B00AF53DE /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4156292559616B00AF53DE /* GFGeoHashQuery.m */; };
+		FD4156342559616B00AF53DE /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = FD41562A2559616B00AF53DE /* GFQuery.m */; };
+		FD4156352559616B00AF53DE /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = FD41562B2559616B00AF53DE /* GFGeoHash.m */; };
+		FD41563D255968F500AF53DE /* GeoLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD41563C255968F500AF53DE /* GeoLocationVC.swift */; };
+		FD4A845E25540E1F00A3ECEE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4A845D25540E1F00A3ECEE /* Constants.swift */; };
+		FDCF838B25514E6D008B910C /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCF838A25514E6D008B910C /* PokeCell.swift */; };
+		FDEF558F255049E5009F86C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF558E255049E5009F86C1 /* AppDelegate.swift */; };
+		FDEF5591255049E5009F86C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF5590255049E5009F86C1 /* SceneDelegate.swift */; };
+		FDEF5593255049E5009F86C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF5592255049E5009F86C1 /* ViewController.swift */; };
+		FDEF5596255049E5009F86C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEF5594255049E5009F86C1 /* Main.storyboard */; };
+		FDEF5598255049E6009F86C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEF5597255049E6009F86C1 /* Assets.xcassets */; };
+		FDEF559B255049E6009F86C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEF5599255049E6009F86C1 /* LaunchScreen.storyboard */; };
+		FDEF55A425504A82009F86C1 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = FDEF55A325504A82009F86C1 /* pokemon.csv */; };
+		FDEF55A825504BC1009F86C1 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF55A725504BC1009F86C1 /* Pokemon.swift */; };
+		FDF0B3DB2552934C003BCE1F /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0B3DA2552934C003BCE1F /* PokemonDetailVC.swift */; };
+		FDF95B91255B066400432510 /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF95B90255B066400432510 /* PokeAnnotation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09C5B14ECBE0F20586583BAC /* Pods_Poke_Go_Catcha_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Poke_Go_Catcha_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16FABAE176BF0EF9FFA991D7 /* Pods-Poke Go Catcha!.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poke Go Catcha!.debug.xcconfig"; path = "Target Support Files/Pods-Poke Go Catcha!/Pods-Poke Go Catcha!.debug.xcconfig"; sourceTree = "<group>"; };
+		7EB2AD9FB3D217D1FE66BAB5 /* Pods-Poke Go Catcha!.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poke Go Catcha!.release.xcconfig"; path = "Target Support Files/Pods-Poke Go Catcha!/Pods-Poke Go Catcha!.release.xcconfig"; sourceTree = "<group>"; };
+		FD207EEA2551BF63001CD580 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		FD207EED2551C7A8001CD580 /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
+		FD302B75255BFAB20044312B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		FD41560D25595CE900AF53DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FD4156202559616B00AF53DE /* GeoFire-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire-Prefix.pch"; sourceTree = "<group>"; };
+		FD4156222559616B00AF53DE /* GFBase32Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBase32Utils.h; sourceTree = "<group>"; };
+		FD4156232559616B00AF53DE /* GFGeoHashQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHashQuery.h; sourceTree = "<group>"; };
+		FD4156242559616B00AF53DE /* GFGeoHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHash.h; sourceTree = "<group>"; };
+		FD4156252559616B00AF53DE /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
+		FD4156262559616B00AF53DE /* GFBase32Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBase32Utils.m; sourceTree = "<group>"; };
+		FD4156272559616B00AF53DE /* GeoFire+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire+Private.h"; sourceTree = "<group>"; };
+		FD4156282559616B00AF53DE /* GeoFire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoFire.m; sourceTree = "<group>"; };
+		FD4156292559616B00AF53DE /* GFGeoHashQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHashQuery.m; sourceTree = "<group>"; };
+		FD41562A2559616B00AF53DE /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
+		FD41562B2559616B00AF53DE /* GFGeoHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHash.m; sourceTree = "<group>"; };
+		FD41562D2559616B00AF53DE /* GFRegionQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRegionQuery.h; sourceTree = "<group>"; };
+		FD41562E2559616B00AF53DE /* GeoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFire.h; sourceTree = "<group>"; };
+		FD41562F2559616B00AF53DE /* GFQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFQuery.h; sourceTree = "<group>"; };
+		FD4156302559616B00AF53DE /* GFCircleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCircleQuery.h; sourceTree = "<group>"; };
+		FD4156382559635300AF53DE /* PokeFinder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokeFinder-Bridging-Header.h"; sourceTree = "<group>"; };
+		FD41563C255968F500AF53DE /* GeoLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocationVC.swift; sourceTree = "<group>"; };
+		FD4A845D25540E1F00A3ECEE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FDCF838A25514E6D008B910C /* PokeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
+		FDEF558B255049E5009F86C1 /* Poke Go Catcha!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poke Go Catcha!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDEF558E255049E5009F86C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDEF5590255049E5009F86C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FDEF5592255049E5009F86C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDEF5595255049E5009F86C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDEF5597255049E6009F86C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDEF559A255049E6009F86C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDEF559C255049E6009F86C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDEF55A325504A82009F86C1 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
+		FDEF55A725504BC1009F86C1 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		FDF0B3DA2552934C003BCE1F /* PokemonDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
+		FDF95B90255B066400432510 /* PokeAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDEF5588255049E5009F86C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F11A72F6FFA2699D9ED098ED /* Pods_Poke_Go_Catcha_.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D0D8EA7B9D3CFE26DB8CA48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16FABAE176BF0EF9FFA991D7 /* Pods-Poke Go Catcha!.debug.xcconfig */,
+				7EB2AD9FB3D217D1FE66BAB5 /* Pods-Poke Go Catcha!.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C10020848DF052CEDA1EA0DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09C5B14ECBE0F20586583BAC /* Pods_Poke_Go_Catcha_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD207EF02551C7B3001CD580 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FDEF5592255049E5009F86C1 /* ViewController.swift */,
+				FDF0B3DA2552934C003BCE1F /* PokemonDetailVC.swift */,
+				FD41563C255968F500AF53DE /* GeoLocationVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FD207EF12551C7D1001CD580 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FD207EED2551C7A8001CD580 /* pokemon.ttf */,
+				FDEF55A325504A82009F86C1 /* pokemon.csv */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		FD207EF22551C810001CD580 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				FD207EEA2551BF63001CD580 /* csv.swift */,
+				FD4A845D25540E1F00A3ECEE /* Constants.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		FD41561F2559616B00AF53DE /* GeoFire */ = {
+			isa = PBXGroup;
+			children = (
+				FD4156202559616B00AF53DE /* GeoFire-Prefix.pch */,
+				FD4156212559616B00AF53DE /* Implementation */,
+				FD41562C2559616B00AF53DE /* API */,
+			);
+			path = GeoFire;
+			sourceTree = "<group>";
+		};
+		FD4156212559616B00AF53DE /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				FD4156222559616B00AF53DE /* GFBase32Utils.h */,
+				FD4156232559616B00AF53DE /* GFGeoHashQuery.h */,
+				FD4156242559616B00AF53DE /* GFGeoHash.h */,
+				FD4156252559616B00AF53DE /* GFQuery+Private.h */,
+				FD4156262559616B00AF53DE /* GFBase32Utils.m */,
+				FD4156272559616B00AF53DE /* GeoFire+Private.h */,
+				FD4156282559616B00AF53DE /* GeoFire.m */,
+				FD4156292559616B00AF53DE /* GFGeoHashQuery.m */,
+				FD41562A2559616B00AF53DE /* GFQuery.m */,
+				FD41562B2559616B00AF53DE /* GFGeoHash.m */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		FD41562C2559616B00AF53DE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FD41562D2559616B00AF53DE /* GFRegionQuery.h */,
+				FD41562E2559616B00AF53DE /* GeoFire.h */,
+				FD41562F2559616B00AF53DE /* GFQuery.h */,
+				FD4156302559616B00AF53DE /* GFCircleQuery.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FDCF838925514DEA008B910C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDCF838A25514E6D008B910C /* PokeCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FDEF5582255049E5009F86C1 = {
+			isa = PBXGroup;
+			children = (
+				FDEF558D255049E5009F86C1 /* Poke Go Catcha! */,
+				FDEF558C255049E5009F86C1 /* Products */,
+				3D0D8EA7B9D3CFE26DB8CA48 /* Pods */,
+				C10020848DF052CEDA1EA0DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FDEF558C255049E5009F86C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDEF558B255049E5009F86C1 /* Poke Go Catcha!.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDEF558D255049E5009F86C1 /* Poke Go Catcha! */ = {
+			isa = PBXGroup;
+			children = (
+				FD41561F2559616B00AF53DE /* GeoFire */,
+				FDEF55A625504BB1009F86C1 /* Model */,
+				FDCF838925514DEA008B910C /* View */,
+				FD207EF02551C7B3001CD580 /* Controller */,
+				FDEF558E255049E5009F86C1 /* AppDelegate.swift */,
+				FDEF5590255049E5009F86C1 /* SceneDelegate.swift */,
+				FDEF5594255049E5009F86C1 /* Main.storyboard */,
+				FD207EF12551C7D1001CD580 /* Resource */,
+				FD207EF22551C810001CD580 /* Util */,
+				FDEF5597255049E6009F86C1 /* Assets.xcassets */,
+				FDEF5599255049E6009F86C1 /* LaunchScreen.storyboard */,
+				FD41560D25595CE900AF53DE /* GoogleService-Info.plist */,
+				FDEF559C255049E6009F86C1 /* Info.plist */,
+				FD4156382559635300AF53DE /* PokeFinder-Bridging-Header.h */,
+				FD302B75255BFAB20044312B /* Launch Screen.storyboard */,
+			);
+			path = "Poke Go Catcha!";
+			sourceTree = "<group>";
+		};
+		FDEF55A625504BB1009F86C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FDEF55A725504BC1009F86C1 /* Pokemon.swift */,
+				FDF95B90255B066400432510 /* PokeAnnotation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDEF558A255049E5009F86C1 /* Poke Go Catcha! */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDEF559F255049E6009F86C1 /* Build configuration list for PBXNativeTarget "Poke Go Catcha!" */;
+			buildPhases = (
+				0FD1F0B444B11CFC8AC89093 /* [CP] Check Pods Manifest.lock */,
+				FDEF5587255049E5009F86C1 /* Sources */,
+				FDEF5588255049E5009F86C1 /* Frameworks */,
+				FDEF5589255049E5009F86C1 /* Resources */,
+				20EDA4D625BE856AE259470F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Poke Go Catcha!";
+			productName = "Poke Go Catcha!";
+			productReference = FDEF558B255049E5009F86C1 /* Poke Go Catcha!.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDEF5583255049E5009F86C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					FDEF558A255049E5009F86C1 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = FDEF5586255049E5009F86C1 /* Build configuration list for PBXProject "Poke Go Catcha!" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDEF5582255049E5009F86C1;
+			productRefGroup = FDEF558C255049E5009F86C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDEF558A255049E5009F86C1 /* Poke Go Catcha! */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDEF5589255049E5009F86C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD207EEE2551C7A8001CD580 /* pokemon.ttf in Resources */,
+				FDEF559B255049E6009F86C1 /* LaunchScreen.storyboard in Resources */,
+				FDEF5598255049E6009F86C1 /* Assets.xcassets in Resources */,
+				FDEF55A425504A82009F86C1 /* pokemon.csv in Resources */,
+				FDEF5596255049E5009F86C1 /* Main.storyboard in Resources */,
+				FD41560E25595CE900AF53DE /* GoogleService-Info.plist in Resources */,
+				FD302B76255BFAB20044312B /* Launch Screen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FD1F0B444B11CFC8AC89093 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Poke Go Catcha!-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20EDA4D625BE856AE259470F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Poke Go Catcha!/Pods-Poke Go Catcha!-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Poke Go Catcha!/Pods-Poke Go Catcha!-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Poke Go Catcha!/Pods-Poke Go Catcha!-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDEF5587255049E5009F86C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD207EEB2551BF63001CD580 /* csv.swift in Sources */,
+				FDEF5593255049E5009F86C1 /* ViewController.swift in Sources */,
+				FDEF55A825504BC1009F86C1 /* Pokemon.swift in Sources */,
+				FD4156342559616B00AF53DE /* GFQuery.m in Sources */,
+				FDEF558F255049E5009F86C1 /* AppDelegate.swift in Sources */,
+				FD41563D255968F500AF53DE /* GeoLocationVC.swift in Sources */,
+				FDF0B3DB2552934C003BCE1F /* PokemonDetailVC.swift in Sources */,
+				FDEF5591255049E5009F86C1 /* SceneDelegate.swift in Sources */,
+				FDCF838B25514E6D008B910C /* PokeCell.swift in Sources */,
+				FD4156352559616B00AF53DE /* GFGeoHash.m in Sources */,
+				FD4A845E25540E1F00A3ECEE /* Constants.swift in Sources */,
+				FD4156312559616B00AF53DE /* GFBase32Utils.m in Sources */,
+				FD4156332559616B00AF53DE /* GFGeoHashQuery.m in Sources */,
+				FDF95B91255B066400432510 /* PokeAnnotation.swift in Sources */,
+				FD4156322559616B00AF53DE /* GeoFire.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FDEF5594255049E5009F86C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDEF5595255049E5009F86C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDEF5599255049E6009F86C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDEF559A255049E6009F86C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDEF559D255049E6009F86C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDEF559E255049E6009F86C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDEF55A0255049E6009F86C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16FABAE176BF0EF9FFA991D7 /* Pods-Poke Go Catcha!.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PSB2JYN24Y;
+				INFOPLIST_FILE = "Poke Go Catcha!/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cloudseven7.Poke-Go-Catcha-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Poke Go Catcha!/PokeFinder-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDEF55A1255049E6009F86C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EB2AD9FB3D217D1FE66BAB5 /* Pods-Poke Go Catcha!.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PSB2JYN24Y;
+				INFOPLIST_FILE = "Poke Go Catcha!/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cloudseven7.Poke-Go-Catcha-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Poke Go Catcha!/PokeFinder-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDEF5586255049E5009F86C1 /* Build configuration list for PBXProject "Poke Go Catcha!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDEF559D255049E6009F86C1 /* Debug */,
+				FDEF559E255049E6009F86C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDEF559F255049E6009F86C1 /* Build configuration list for PBXNativeTarget "Poke Go Catcha!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDEF55A0255049E6009F86C1 /* Debug */,
+				FDEF55A1255049E6009F86C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDEF5583255049E5009F86C1 /* Project object */;
+}

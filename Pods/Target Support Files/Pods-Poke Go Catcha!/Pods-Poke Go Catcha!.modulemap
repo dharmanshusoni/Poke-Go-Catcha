@@ -1,0 +1,6 @@
+framework module Pods_Poke_Go_Catcha_ {
+  umbrella header "Pods-Poke Go Catcha!-umbrella.h"
+
+  export *
+  module * { export * }
+}
